@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+packages/*/dist/
+examples/*/dist/
+haddhi/
+haddhi-tailwind/
+
+# TypeScript incremental state
+*.tsbuildinfo
+
+# Tooling caches
+.vite/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
