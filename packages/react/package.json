@@ -1,10 +1,19 @@
 {
   "name": "haddhi",
   "version": "0.0.1",
+  "description": "Generate React skeleton loading components from rendered UI.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "skeleton",
+    "loading",
+    "cli",
+    "playwright"
+  ],
   "bin": {
     "haddhi": "./dist/cli.js"
   },
@@ -22,7 +31,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js"
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "cli": "node dist/cli.js",
+    "prepack": "pnpm build"
   },
   "peerDependencies": {
     "react": ">=18",

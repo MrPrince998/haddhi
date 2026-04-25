@@ -26,6 +26,8 @@ Instead of manually designing loading states, Haddhi inspects your rendered UI a
 
 ## 📦 Installation
 
+Install Haddhi in your app:
+
 ```bash
 npm install haddhi
 ```
@@ -36,6 +38,25 @@ or
 pnpm add haddhi
 ```
 
+Run the CLI without installing it globally:
+
+```bash
+npx haddhi build --url http://localhost:5173 --component ProjectCard
+```
+
+or
+
+```bash
+pnpm dlx haddhi build --url http://localhost:5173 --component ProjectCard
+```
+
+You can also install the command globally:
+
+```bash
+npm install -g haddhi
+haddhi build --url http://localhost:5173 --component ProjectCard
+```
+
 ---
 
 ## 🧑‍💻 Usage
@@ -43,11 +64,11 @@ pnpm add haddhi
 ### 1. Wrap your component
 
 ```tsx
-import { Skeleton } from "haddhi";
+import { Haddhi } from "haddhi";
 
-<Skeleton name="project-card" loading={isLoading}>
+<Haddhi loading={isLoading}>
   <ProjectCard data={data} />
-</Skeleton>;
+</Haddhi>;
 ```
 
 ---
@@ -55,7 +76,7 @@ import { Skeleton } from "haddhi";
 ### 2. Generate skeletons via CLI
 
 ```bash
-npx haddhi build
+npx haddhi build --url http://localhost:5173 --component ProjectCard
 ```
 
 This will:
@@ -74,7 +95,7 @@ When `loading=true`, Haddhi will automatically render the generated skeleton.
 
 ## ⚙️ How It Works
 
-1. You wrap components using `<Skeleton />`
+1. You wrap components using `<Haddhi />`
 2. Haddhi CLI scans your running app
 3. It reads layout using DOM measurements (`getBoundingClientRect`)
 4. Generates skeleton structure (JSON or component)
