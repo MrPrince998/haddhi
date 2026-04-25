@@ -1,3 +1,8 @@
+[![npm version](https://img.shields.io/npm/v/@haddhi/react?logo=npm&color=cb3837&label=Haddhi)](https://www.npmjs.com/package/@haddhi/react)
+[![npm version](https://img.shields.io/npm/v/@haddhi/react?logo=npm&color=cb3837&label=Haddhi-react)](https://www.npmjs.com/package/@haddhi/react)
+[![license](https://img.shields.io/npm/l/@haddhi/react)](https://www.npmjs.com/package/@haddhi/react)
+<br/>
+
 # Haddhi
 
 Skeleton loading UI for React, with an optional CLI that can generate skeleton components from your running app.
