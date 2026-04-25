@@ -5,8 +5,9 @@ node_modules/
 dist/
 packages/*/dist/
 examples/*/dist/
-haddhi/
-haddhi-tailwind/
+/haddhi/
+/haddhi-tailwind/
+.next/
 
 # TypeScript incremental state
 *.tsbuildinfo
