@@ -9,6 +9,8 @@ Skeleton loading UI for React, with an optional CLI that can generate skeleton c
 
 Haddhi helps you replace repetitive loading-state work with skeletons that match your real UI. Use `@haddhi/react` inside your app, and use `@haddhi/cli` when you want to inspect a page and generate a skeleton file.
 
+NPM package: https://www.npmjs.com/package/@haddhi/react
+
 ## Packages
 
 | Package | Use it for |

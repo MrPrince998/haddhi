@@ -4,6 +4,8 @@ React skeleton loading components for Haddhi.
 
 Use this package when you want to render polished loading placeholders in a React app. The companion CLI package is `@haddhi/cli`, which exposes the `haddhi` command for generating skeleton files from a running page.
 
+NPM package: https://www.npmjs.com/package/@haddhi/react
+
 ## Installation
 
 ```bash
