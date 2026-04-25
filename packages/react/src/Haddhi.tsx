@@ -87,6 +87,10 @@ function useDelayedSkeleton(loading: boolean, delay: number) {
 }
 
 const DISALLOWED_TAGS = ["script", "iframe", "object", "embed"];
+const hiddenMeasurementStyle: CSSProperties = {
+  pointerEvents: "none",
+  visibility: "hidden",
+};
 
 function isSafeWrapper(wrapper: any) {
   if (typeof wrapper === "string") {
@@ -322,7 +326,12 @@ function HaddhiLoadingView({
   return (
     <Wrapper className={className} style={{ position: "relative" }}>
       {isAutoVariant && (
-        <div ref={hiddenRef} className="haddhi-hidden" aria-hidden="true">
+        <div
+          ref={hiddenRef}
+          className="haddhi-hidden"
+          aria-hidden="true"
+          style={hiddenMeasurementStyle}
+        >
           {children}
         </div>
       )}
