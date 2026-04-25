@@ -136,7 +136,7 @@ export default async function Page() {
           <InstallCommandBar stars={stars} />
           <div className="flex flex-wrap gap-2">
             <Button asChild size="lg">
-              <Link href="/docs/install">
+              <Link href="/install">
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -404,7 +404,7 @@ export function DashboardWidget({ data, isLoading }) {
             </Link>
           </Button>
           <Button asChild>
-            <Link href="/docs/install">
+            <Link href="/install">
               Start building
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
