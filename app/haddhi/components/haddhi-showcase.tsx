@@ -1,7 +1,4 @@
-import {
-  Haddhi,
-  type HaddhiPreset,
-} from "../../../packages/react/dist/index.js"
+import { Haddhi, type HaddhiPreset } from "@haddhi/react"
 
 import { Badge } from "@/components/ui/badge"
 import {
