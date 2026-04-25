@@ -26,19 +26,19 @@ Instead of manually designing loading states, Haddhi inspects your rendered UI a
 
 ## 📦 Installation
 
-Install Haddhi in your app:
+Install the React package in your app:
 
 ```bash
-npm install haddhi
+npm install @haddhi/react
 ```
 
 or
 
 ```bash
-pnpm add haddhi
+pnpm add @haddhi/react
 ```
 
-Run the CLI without installing it globally:
+Run the CLI package without installing it globally:
 
 ```bash
 npx haddhi build --url http://localhost:5173 --component ProjectCard
@@ -64,7 +64,7 @@ haddhi build --url http://localhost:5173 --component ProjectCard
 ### 1. Wrap your component
 
 ```tsx
-import { Haddhi } from "haddhi";
+import { Haddhi } from "@haddhi/react";
 
 <Haddhi loading={isLoading}>
   <ProjectCard data={data} />

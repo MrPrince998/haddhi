@@ -1,0 +1,47 @@
+{
+  "name": "@haddhi/cli",
+  "version": "0.0.1",
+  "description": "CLI for generating skeleton loading components from rendered UI.",
+  "type": "module",
+  "main": "dist/cli.js",
+  "types": "dist/cli.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "skeleton",
+    "loading",
+    "cli",
+    "playwright",
+    "skeleton-ui",
+    "react-skeleton",
+    "loading-placeholder",
+    "ui-skeleton",
+    "react"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrPrince998/haddhi"
+  },
+  "homepage": "https://github.com/MrPrince998/haddhi#readme",
+  "bugs": {
+    "url": "https://github.com/MrPrince998/haddhi/issues"
+  },
+  "bin": {
+    "haddhi": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "cli": "node dist/cli.js",
+    "prepack": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}

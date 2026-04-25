@@ -1,6 +1,6 @@
 /* @jsxRuntime classic */
 import React from "react";
-import { Haddhi } from "haddhi";
+import { Haddhi } from "@haddhi/react";
 export default function App() {
   return (
     <div>

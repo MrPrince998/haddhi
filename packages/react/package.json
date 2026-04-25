@@ -1,7 +1,7 @@
 {
-  "name": "haddhi",
-  "version": "0.0.1",
-  "description": "Generate React skeleton loading components from rendered UI.",
+  "name": "@haddhi/react",
+  "version": "0.1.0",
+  "description": "React skeleton loading components generated from rendered UI.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -10,29 +10,19 @@
   "keywords": [
     "react",
     "skeleton",
-    "loading",
-    "cli",
-    "playwright"
+    "loading"
   ],
-  "bin": {
-    "haddhi": "./dist/cli.js"
-  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
-    },
-    "./cli": {
-      "types": "./dist/cli.d.ts",
-      "import": "./dist/cli.js"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
-    "cli": "node dist/cli.js",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
     "prepack": "pnpm build"
   },
   "peerDependencies": {
@@ -43,8 +33,5 @@
     "@types/node": "^24.12.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0"
-  },
-  "dependencies": {
-    "playwright": "^1.59.1"
   }
 }
