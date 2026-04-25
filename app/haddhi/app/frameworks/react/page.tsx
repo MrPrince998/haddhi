@@ -58,7 +58,7 @@ export default function Page() {
           <Badge variant="outline" className="font-mono">
             loading
           </Badge>{" "}
-          prop. That's it.
+          prop. That is it.
         </AlertDescription>
       </Alert>
 
@@ -416,7 +416,7 @@ export function ArticleWithFallback() {
           </Alert>
           <Alert variant="default">
             <AlertCircle className="h-4 w-4" />
-            <AlertTitle>Don't: Over-nest</AlertTitle>
+            <AlertTitle>Do not: Over-nest</AlertTitle>
             <AlertDescription>
               Avoid wrapping components that are already inside another Haddhi.
               One wrapper per loading boundary is enough.
@@ -432,7 +432,7 @@ export function ArticleWithFallback() {
           </Alert>
           <Alert variant="default">
             <Code2 className="h-4 w-4" />
-            <AlertTitle>Don't: Forget cacheKey</AlertTitle>
+            <AlertTitle>Do not: Forget cacheKey</AlertTitle>
             <AlertDescription>
               When the same component appears in different contexts, add a
               cacheKey to prevent incorrect cached layouts.

@@ -416,8 +416,8 @@ export function SimpleSkeleton({ isLoading, children }) {
             <CardContent>
               <p className="text-sm text-muted-foreground">
                 Measured layouts are cached by default. The same component
-                structure won't be measured twice, saving CPU cycles on repeated
-                loading states.
+                structure will not be measured twice, saving CPU cycles on
+                repeated loading states.
               </p>
             </CardContent>
           </Card>

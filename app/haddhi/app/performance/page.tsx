@@ -27,11 +27,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
   Zap,
   Gauge,
-  BarChart3,
   Timer,
   Database,
   Layers,
-  Rocket,
   TrendingDown,
   Shield,
 } from "lucide-react"

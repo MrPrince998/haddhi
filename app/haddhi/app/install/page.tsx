@@ -23,7 +23,6 @@ import {
   Zap,
   Shield,
   ExternalLink,
-  Copy,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -197,7 +196,7 @@ export function ProjectCardView({ isLoading, project }) {
           <AlertDescription>
             In Next.js App Router, you need to add the{" "}
             <Badge variant="outline" className="font-mono">
-              "use client"
+              {'"use client"'}
             </Badge>{" "}
             directive to files that import and use Haddhi directly.
           </AlertDescription>
@@ -221,7 +220,7 @@ export function ClientSkeleton({ loading, children }) {
           <CheckCircle2 className="h-4 w-4 text-emerald-500" />
           <AlertTitle>Tip for Server Components</AlertTitle>
           <AlertDescription>
-            You can still use presets and variants that don't require
+            You can still use presets and variants that do not require
             measurement in Server Components. Only{" "}
             <code className="rounded bg-muted px-1">auto</code> mode needs
             client-side measurement.

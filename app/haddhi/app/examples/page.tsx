@@ -197,7 +197,7 @@ export default function Page() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                  Any component that doesn't match existing presets
+                  Any component that does not match existing presets
                 </li>
               </ul>
             </CardContent>
@@ -341,27 +341,39 @@ export default function Page() {
         <AlertDescription>
           <div className="mt-2 grid gap-2 text-sm">
             <div>
-              <code className="rounded bg-muted px-1">preset="profile"</code> —
-              User cards, account headers
+              <code className="rounded bg-muted px-1">
+                {'preset="profile"'}
+              </code>{" "}
+              — User cards, account headers
             </div>
             <div>
-              <code className="rounded bg-muted px-1">preset="article"</code> —
-              Blog posts, documentation
+              <code className="rounded bg-muted px-1">
+                {'preset="article"'}
+              </code>{" "}
+              — Blog posts, documentation
             </div>
             <div>
-              <code className="rounded bg-muted px-1">preset="product"</code> —
-              E-commerce, metrics
+              <code className="rounded bg-muted px-1">
+                {'preset="product"'}
+              </code>{" "}
+              — E-commerce, metrics
             </div>
             <div>
-              <code className="rounded bg-muted px-1">preset="comment"</code> —
-              Reviews, replies
+              <code className="rounded bg-muted px-1">
+                {'preset="comment"'}
+              </code>{" "}
+              — Reviews, replies
             </div>
             <div>
-              <code className="rounded bg-muted px-1">preset="list-item"</code>{" "}
+              <code className="rounded bg-muted px-1">
+                {'preset="list-item"'}
+              </code>{" "}
               — Feeds, search results
             </div>
             <div>
-              <code className="rounded bg-muted px-1">preset="blog-card"</code>{" "}
+              <code className="rounded bg-muted px-1">
+                {'preset="blog-card"'}
+              </code>{" "}
               — Article previews
             </div>
           </div>

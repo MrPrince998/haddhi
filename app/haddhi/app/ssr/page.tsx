@@ -20,7 +20,6 @@ import {
   Server,
   Cpu,
   Globe,
-  Shield,
   Zap,
   Layout,
   AlertCircle,
@@ -106,7 +105,7 @@ export function ArticleSkeleton() {
             variant="outline"
             className="bg-amber-100 font-mono dark:bg-amber-900"
           >
-            "use client"
+            {'"use client"'}
           </Badge>{" "}
           directive. Server components can pass children into that boundary, but
           cannot use Haddhi directly due to auto-measurement requiring the DOM.
@@ -193,7 +192,8 @@ export default function Page() {
               <AlertTitle>Presets are SSR-safe</AlertTitle>
               <AlertDescription>
                 Presets and variants do not require DOM measurement, so they can
-                be used directly in Server Components without the "use client"
+                be used directly in Server Components without the{" "}
+                <code className="rounded bg-muted px-1">{'"use client"'}</code>{" "}
                 directive.
               </AlertDescription>
             </Alert>
@@ -331,8 +331,9 @@ export default function Dashboard() {
             <CardContent>
               <p className="text-sm text-muted-foreground">
                 Using auto mode in a Server Component will cause hydration
-                errors because the server doesn't know the DOM structure. Always
-                wrap auto mode in "use client".
+                errors because the server does not know the DOM structure.
+                Always wrap auto mode in{" "}
+                <code className="rounded bg-muted px-1">{'"use client"'}</code>.
               </p>
             </CardContent>
           </Card>

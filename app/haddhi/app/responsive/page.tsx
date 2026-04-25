@@ -336,7 +336,7 @@ export function ResponsiveCard({ data, isLoading }) {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Don't wrap responsive grid containers themselves. Wrap the
+                Do not wrap responsive grid containers themselves. Wrap the
                 individual items inside for better measurement accuracy.
               </p>
             </CardContent>
