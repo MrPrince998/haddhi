@@ -15,8 +15,8 @@ importers:
   app/haddhi:
     dependencies:
       '@haddhi/react':
-        specifier: workspace:*
-        version: link:../../packages/react
+        specifier: ^0.1.2
+        version: 0.1.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -404,6 +404,12 @@ packages:
 
   '@floating-ui/utils@0.2.11':
     resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
+
+  '@haddhi/react@0.1.2':
+    resolution: {integrity: sha512-JHIdL+xM3TJZITT8K8u2CDJVMMzcTWdgH3gcefpXJoZolzuKU1X/qwXBEByz5HDLUmj8YygdkZDU58vX6K5aMA==}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
 
   '@hono/node-server@1.19.14':
     resolution: {integrity: sha512-GwtvgtXxnWsucXvbQXkRgqksiH2Qed37H9xHZocE5sA3N8O8O8/8FA3uclQXxXVzc9XBZuEOMK7+r02FmSpHtw==}
@@ -4486,6 +4492,11 @@ snapshots:
       react-dom: 19.2.5(react@19.2.5)
 
   '@floating-ui/utils@0.2.11': {}
+
+  '@haddhi/react@0.1.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
 
   '@hono/node-server@1.19.14(hono@4.12.15)':
     dependencies:
