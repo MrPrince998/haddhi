@@ -34,6 +34,9 @@ import {
   ArrowUpDown,
 } from "lucide-react"
 import version from "../../../../packages/react/package.json"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/changelog")
 
 const releases = [
   {

@@ -28,6 +28,9 @@ import {
   FileJson,
 } from "lucide-react"
 import Link from "next/link"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/ssr")
 
 export default function Page() {
   return (

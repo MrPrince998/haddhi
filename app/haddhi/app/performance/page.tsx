@@ -33,6 +33,9 @@ import {
   TrendingDown,
   Shield,
 } from "lucide-react"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/performance")
 
 export default function Page() {
   return (

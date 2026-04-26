@@ -25,6 +25,9 @@ import {
   ExternalLink,
 } from "lucide-react"
 import Link from "next/link"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/install")
 
 export default function Page() {
   return (

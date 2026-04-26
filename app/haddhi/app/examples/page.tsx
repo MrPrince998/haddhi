@@ -31,6 +31,9 @@ import {
   CheckCircle2,
   Zap,
 } from "lucide-react"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/examples")
 
 const recipes = [
   {

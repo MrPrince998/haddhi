@@ -35,6 +35,9 @@ import {
   HelpCircle,
   Zap,
 } from "lucide-react"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/responsive")
 
 const widths = [
   {

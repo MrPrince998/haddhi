@@ -36,6 +36,9 @@ import {
   Layers,
   RefreshCw,
 } from "lucide-react"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/how-it-works")
 
 export default function Page() {
   return (

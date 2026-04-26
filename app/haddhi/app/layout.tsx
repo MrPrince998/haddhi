@@ -12,6 +12,11 @@ import Asidebar from "@/components/asidebar"
 import { FaGithub } from "react-icons/fa"
 import Footer from "@/components/footer"
 import { MobileNav } from "@/components/mobile-nav"
+import {
+  siteConfig,
+  softwareApplicationJsonLd,
+  websiteJsonLd,
+} from "@/lib/seo"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,42 +30,48 @@ const fontMono = Geist_Mono({
   display: "swap",
 })
 
-// Metadata for better SEO
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
-    default: "Haddhi · Skeleton UI for React",
+    default: siteConfig.title,
     template: "%s | Haddhi",
   },
-  description:
-    "Haddhi generates skeleton loading screens that match your existing React UI. Auto-measurement, presets, animations, and TypeScript support.",
-  keywords: [
-    "react",
-    "skeleton",
-    "loading",
-    "ui",
-    "placeholder",
-    "haddhi",
-    "bone",
-    "nextjs",
-    "typescript",
-  ],
-  authors: [{ name: "MrPrince998" }],
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [{ name: siteConfig.author }],
+  creator: siteConfig.author,
+  publisher: siteConfig.author,
+  category: "Developer Tools",
+  alternates: {
+    canonical: "/overview",
+  },
   openGraph: {
-    title: "Haddhi · Skeleton UI for React",
-    description:
-      "Generate skeleton screens from the UI you already built. Auto-measure, presets, animations — zero boilerplate.",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: "/overview",
     type: "website",
     locale: "en_US",
-    siteName: "Haddhi",
+    siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haddhi · Skeleton UI for React",
-    description: "Generate skeleton screens from the UI you already built.",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
 }
 
@@ -137,6 +148,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const jsonLd = [websiteJsonLd(), softwareApplicationJsonLd()]
+
   return (
     <html
       lang="en"
@@ -144,6 +157,10 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, inter.variable)}
     >
       <body className="bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

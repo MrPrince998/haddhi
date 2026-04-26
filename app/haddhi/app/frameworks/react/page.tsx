@@ -34,6 +34,9 @@ import {
   CheckCircle2,
   Sparkles,
 } from "lucide-react"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata("/frameworks/react")
 
 export default function Page() {
   return (
